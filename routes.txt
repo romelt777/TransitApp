@@ -1,0 +1,78 @@
+1,Spring Garden
+10,Dalhousie
+123,Timberlea
+127,Cowie Hill Express
+135,Flamingo
+136,Farnham Gate
+137,Clayton Park
+138,Parkland
+158,Woodlawn Express
+159,Colby Express
+161,North Preston Express
+165,Caldwell Express
+168A,Auburn Express
+168B,Cherry Brook Express
+182,First Lake Express
+183,Springfield Express
+185,Millwood Express
+186,Beaver Bank Express
+194,West Bedford Express
+196,Basinview Express
+2,Fairview
+21,Lakeside - Timberlea
+22,Armdale
+24,Leiblin Park
+25,Governors Brook
+26,Springvale
+28,Bayers Lake
+29,Point Pleasant
+3,CrossTown
+30A,Parkland
+30B,Dunbrack
+320,Airport - Fall River
+330,Tantallon - Sheldrake Lake
+370,Porters Lake
+39,Flamingo
+4,Universities
+401,Porters Lake
+415,Purcells Cove
+433,Tantallon
+5,Portland
+50,Dockyard
+51A,Windmill
+51B,Windmill - Wrights Cove
+53,Highfield
+54,Montebello
+55,Port Wallace
+56,Dartmouth Crossing
+57,Portland Estates
+58,Woodlawn
+59,Colby
+61,North Preston
+62,Grahams Cove
+63,Mount Edward
+64,Burnside
+65,Caldwell
+67,Baker
+68,Cherry Brook
+6A,Woodside
+6B,Eastern Passage
+6C,Heritage Hills
+72,Portland Hills
+7A,Peninsula
+7B,Peninsula
+8,Sackville Corridor
+82,First Lake
+83,Springfield
+84,Glendale
+85,Millwood
+86,Beaver Bank
+87,Sackville - Dartmouth
+88,Bedford Commons
+90,Larry Uteck
+91,Hemlock Ravine
+93,Bedford Highway
+9A,Greystone
+9B,Herring Cove
+FerD,Alderney Ferry
+FerW,Woodside Ferry
