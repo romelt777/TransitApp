@@ -8,7 +8,7 @@ A kotlin android application using RetroFitAPI to show nearby bus routes, alerts
   
 ![](https://github.com/romelt777/TransitApp/blob/main/SCREENSHOTS/REQUEST_PERMISSIONS.png)
   
-- Displaying the map with bus routes, and user saved routes.
+- Displaying the map with bus routes (GTFS), and user saved routes.
   
 ![](https://github.com/romelt777/TransitApp/blob/main/SCREENSHOTS/HOME_FRAGMENT_WITH_USER_ROUTES.png)
 
@@ -20,11 +20,11 @@ A kotlin android application using RetroFitAPI to show nearby bus routes, alerts
 
 ![](https://github.com/romelt777/TransitApp/blob/main/SCREENSHOTS/SEARCHING_ROUTES.png)
 
-- User saving routes
+- User saving routes, using android internal storage
   
 ![](https://github.com/romelt777/TransitApp/blob/main/SCREENSHOTS/ROUTES_ADDED.png)
 
-- Local notifications
+- Local notifications, from GTFS
   
 ![](https://github.com/romelt777/TransitApp/blob/main/SCREENSHOTS/ALERTS.png)
 
