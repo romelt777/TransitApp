@@ -49,7 +49,7 @@ class DashboardFragment : BaseFragment() {
 
         //adding routes to phone memory
         var myBusRoutes:TextView = binding.textViewMyBusRoutes;
-//        loadInternalStorage(myBusRoutes);
+        loadInternalStorage(myBusRoutes);
         var addRoutesButton: Button = binding.buttonAddRoutes;
         addRoutesButton.setOnClickListener{
             myBusRoutes.post({
@@ -61,7 +61,7 @@ class DashboardFragment : BaseFragment() {
             })
         }
 
-//        ACTIVITY.getSavedRoutes(myBusRoutes,ACTIVITY.numberRoutes);
+        ACTIVITY.getSavedRoutes(myBusRoutes,ACTIVITY.numberRoutes);
 
         return root
     }

@@ -110,10 +110,8 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-//
-//
-//        loadInternalStorage();
-//        this.savedRoutesList= stringMyBusRoutes.split("\n") as ArrayList<String>
+        loadInternalStorage();
+        this.savedRoutesList= stringMyBusRoutes.split("\n") as ArrayList<String>
 
     }
 
