@@ -127,8 +127,6 @@ class HomeFragment : BaseFragment() {
     override fun onStart() {
         super.onStart()
 
-        Log.d(TAG, "romel is here")
-
     }
 
     override fun onResume() {
@@ -138,9 +136,6 @@ class HomeFragment : BaseFragment() {
         ACTIVITY.savedRoutesList= ACTIVITY.stringMyBusRoutes.split("\n") as ArrayList<String>
 
         mapView = binding.mapView;
-
-//        mapView?.annotations?.cleanup();
-
 
         mapView?.getMapboxMap()!!.loadStyleUri(
             Style.MAPBOX_STREETS,
@@ -156,12 +151,7 @@ class HomeFragment : BaseFragment() {
                         layerId = layer100
                     )
 
-                    //initialize point annotation manager
-//                    pointAnnotationManager?.deleteAll();
-
                     pointAnnotationManager = annotationApi?.createPointAnnotationManager(annotationConfig)
-
-//                    pointAnnotationManager?.deleteAll();
 
                     createMarkerOnMap();
                     createMarkerOnMapBlue();

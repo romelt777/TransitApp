@@ -47,7 +47,6 @@ class MainActivity : AppCompatActivity() {
     var stringMyBusRoutes :String ="";
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -62,15 +61,6 @@ class MainActivity : AppCompatActivity() {
         this.latitude = intent.getDoubleExtra("latitude", 0.0)
         this.longitude = intent.getDoubleExtra("longitude", 0.0)
         Log.i("Location","Latitude: "+latitude + " Longitude: " + longitude);
-
-//        val fragmentManager :FragmentManager = supportFragmentManager;
-//        val fragmentTransaction : FragmentTransaction = fragmentManager.beginTransaction();
-//        val myFragment = HomeFragment();
-//
-//        val bundle = Bundle();
-//        bundle.putDouble("longitude",this.longitude);
-//        bundle.putDouble("latitude",this.latitude);
-//        fragmentTransaction.add(R.id.mapView,myFragment).commit();
 
 
         val url = URL("https://gtfs.halifax.ca/realtime/Vehicle/VehiclePositions.pb")
@@ -93,7 +83,6 @@ class MainActivity : AppCompatActivity() {
 
         //select nav fragment by default, setting to home
         replaceFragment(HomeFragment())
-
 
         //setting navigation bar
         binding.navView.setOnItemSelectedListener {
@@ -125,7 +114,6 @@ class MainActivity : AppCompatActivity() {
             var text: String?
             while (br.readLine().also { text = it } != null) {
                 sb.append(text).append("\n")
-//                textView.append(sb.toString());
                 numberRoutes++;
             }
             stringMyBusRoutes = sb.toString();
