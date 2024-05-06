@@ -61,7 +61,7 @@ class DashboardFragment : BaseFragment() {
             })
         }
 
-        ACTIVITY.getSavedRoutes(myBusRoutes,ACTIVITY.numberRoutes);
+//        ACTIVITY.getSavedRoutes(myBusRoutes,ACTIVITY.numberRoutes);
 
         return root
     }

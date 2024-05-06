@@ -92,7 +92,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         //select nav fragment by default, setting to home
-//        replaceFragment(HomeFragment())
         replaceFragment(HomeFragment())
 
 
@@ -111,10 +110,10 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-
-
-        loadInternalStorage();
-        this.savedRoutesList= stringMyBusRoutes.split("\n") as ArrayList<String>
+//
+//
+//        loadInternalStorage();
+//        this.savedRoutesList= stringMyBusRoutes.split("\n") as ArrayList<String>
 
     }
 
