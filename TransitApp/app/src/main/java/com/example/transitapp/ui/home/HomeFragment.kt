@@ -134,8 +134,8 @@ class HomeFragment : BaseFragment() {
     override fun onResume() {
         super.onResume()
 
-//        ACTIVITY.loadInternalStorage();
-//        ACTIVITY.savedRoutesList= ACTIVITY.stringMyBusRoutes.split("\n") as ArrayList<String>
+        ACTIVITY.loadInternalStorage();
+        ACTIVITY.savedRoutesList= ACTIVITY.stringMyBusRoutes.split("\n") as ArrayList<String>
 
         mapView = binding.mapView;
 

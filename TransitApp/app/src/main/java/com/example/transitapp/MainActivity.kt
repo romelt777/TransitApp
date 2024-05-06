@@ -91,6 +91,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        //select nav fragment by default, setting to home
+//        replaceFragment(HomeFragment())
+        replaceFragment(HomeFragment())
+
+
+        //setting navigation bar
         binding.navView.setOnItemSelectedListener {
             when(it.itemId){
 
@@ -107,8 +113,8 @@ class MainActivity : AppCompatActivity() {
 
 
 
-//        loadInternalStorage();
-//        this.savedRoutesList= stringMyBusRoutes.split("\n") as ArrayList<String>
+        loadInternalStorage();
+        this.savedRoutesList= stringMyBusRoutes.split("\n") as ArrayList<String>
 
     }
 
