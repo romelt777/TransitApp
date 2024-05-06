@@ -1,10 +1,12 @@
 package com.example.transitapp.ui.home
 
 //source => https://docs.mapbox.com/android/maps/guides/install/
+import android.content.ContentValues.TAG
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -58,8 +60,8 @@ class HomeFragment : BaseFragment() {
         this.longitude=ACTIVITY.longitude
 
 
-        ACTIVITY.loadInternalStorage();
-        ACTIVITY.savedRoutesList= ACTIVITY.stringMyBusRoutes.split("\n") as ArrayList<String>
+//        ACTIVITY.loadInternalStorage();
+//        ACTIVITY.savedRoutesList= ACTIVITY.stringMyBusRoutes.split("\n") as ArrayList<String>
 
         return root
     }
@@ -125,13 +127,15 @@ class HomeFragment : BaseFragment() {
     override fun onStart() {
         super.onStart()
 
+        Log.d(TAG, "romel is here")
+
     }
 
     override fun onResume() {
         super.onResume()
 
-        ACTIVITY.loadInternalStorage();
-        ACTIVITY.savedRoutesList= ACTIVITY.stringMyBusRoutes.split("\n") as ArrayList<String>
+//        ACTIVITY.loadInternalStorage();
+//        ACTIVITY.savedRoutesList= ACTIVITY.stringMyBusRoutes.split("\n") as ArrayList<String>
 
         mapView = binding.mapView;
 

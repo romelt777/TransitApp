@@ -5,6 +5,7 @@ import android.os.StrictMode
 import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.findNavController
@@ -12,7 +13,9 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.transitapp.databinding.ActivityMainBinding
+import com.example.transitapp.ui.dashboard.DashboardFragment
 import com.example.transitapp.ui.home.HomeFragment
+import com.example.transitapp.ui.notifications.NotificationsFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.transit.realtime.GtfsRealtime.FeedMessage
 import java.io.BufferedReader
@@ -88,14 +91,20 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val navView: BottomNavigationView = binding.navView
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications))
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        binding.navView.setOnItemSelectedListener {
+            when(it.itemId){
+
+                R.id.navigation_home -> replaceFragment(HomeFragment())
+                R.id.navigation_dashboard -> replaceFragment(DashboardFragment())
+                R.id.navigation_notifications -> replaceFragment(NotificationsFragment())
+
+                else -> {
+
+                }
+            }
+            true
+        }
+
 
 
 //        loadInternalStorage();
@@ -148,6 +157,15 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return false;
+    }
+
+    private fun replaceFragment(fragment : Fragment){
+
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        //replace framlayout with fragment
+        fragmentTransaction.replace(R.id.frameLayout,fragment)
+        fragmentTransaction.commit()
     }
 
 }
