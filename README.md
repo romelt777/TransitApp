@@ -17,7 +17,7 @@ TransitApp allows users to:
 - Receive local notifications for route alerts
 - Persist saved routes using internal storage
 
-This project emphasizes **mobile backend integration and data-driven features** rather than frontend complexity.
+This project emphasizes **mobile backend integration and data-driven features**.
 
 ---
 
