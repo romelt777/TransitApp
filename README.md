@@ -5,57 +5,49 @@
 ![Retrofit](https://img.shields.io/badge/Retrofit-API-yellow)
 ![Local Storage](https://img.shields.io/badge/Storage-Internal%20Storage-green)
 
-TransitApp is a Kotlin-based Android app that displays nearby bus routes and alerts using GTFS transit data. The app demonstrates **API integration, local storage, asynchronous data handling, and user notifications** on a mobile platform.
+TransitApp is a Kotlin-based Android application that displays nearby bus routes and service alerts using GTFS transit data.
 
 ---
 
 ## Overview
 
-TransitApp allows users to:
+The app allows users to:
+
 - View nearby bus routes on a map
-- Search and save favorite routes
+- Search for specific routes
+- Save favorite routes locally
 - Receive local notifications for route alerts
-- Persist saved routes using internal storage
 
-This project emphasizes **mobile backend integration and data-driven features**.
-
----
-
-## Core Features
-
-- Fetches transit data asynchronously via **Retrofit API**
-- Displays user location and nearby routes on an interactive map
-- Enables users to **save favorite routes locally**
-- Sends **local notifications** for alerts using GTFS schedule updates
-- Handles Android permissions and lifecycle for location and notifications
+Transit data is fetched from a public API and rendered dynamically based on the user’s location.
 
 ---
 
-## Technology Stack
+## Implementation Details
 
-- Kotlin / Android SDK  
-- Retrofit for API requests  
-- GTFS public transit data  
-- Internal storage for user data  
-- Local notifications for alerts  
-- Android Maps integration  
+- Network requests handled asynchronously using **Retrofit**
+- User location retrieved via Android location services
+- Favorite routes persisted using internal storage
+- Local notifications triggered for GTFS alert updates
+- Runtime permissions handled for location and notifications
+- Map integration for displaying nearby routes
+
+---
+
+## Tech Stack
+
+- Kotlin
+- Android SDK
+- Retrofit
+- GTFS transit data
+- Internal storage
+- Android Maps API
 
 ---
 
 ## Screenshots
 
-### User Interface & Functionality
 ![Location Permission](SCREENSHOTS/REQUEST_PERMISSIONS.png)
 ![Map with User Routes](SCREENSHOTS/HOME_FRAGMENT_WITH_USER_ROUTES.png)
 ![Search Routes](SCREENSHOTS/SEARCHING_ROUTES.png)
 ![Saved Routes](SCREENSHOTS/ROUTES_ADDED.png)
 ![Local Alerts](SCREENSHOTS/ALERTS.png)
-
----
-
-## Key Takeaways
-
-- Mobile development with Kotlin and Android SDK  
-- API integration and asynchronous network handling  
-- Local data persistence and notifications  
-- Demonstrates breadth beyond web-based backend projects
